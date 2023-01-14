@@ -20,34 +20,31 @@
   bottom: 0;
   z-index: 2;
   background-color: var(--white);
-  white-space: nowrap;
-  padding: 7.5rem 0; 
+  padding-top: 7.5rem; 
   }
 
-  [aria-expanded="true"] ~ nav.container {
-   
+  .navbar-toggler,
+  .logo-img  { z-index: 3; }
+  .nav-link a { font-size: 1.25rem; }
+
+  .btn.buy-now-btn {  
+    text-align: center;
+    margin: var(--size-20) auto;
   }
-
-  nav.container {
-    
-  }
-
-  .navbar-toggler, 
-  .logo-img { 
-    z-index: 3;
-
-   }  
-
-  .btn.buy-now-btn {  margin-top: var(--size-25); }
 
   .container.hero-items { 
     justify-content: center;
-    padding-top: var(--size-50); 
+    padding-top: var(--size-40);
   }
 
   .hero-wrapper { text-align: center; }
   .hero-btn-wrapper { justify-content: center; }
-  .icons-wrapper { margin: var(--size-75) 0; }
+  
+  .icons-wrapper { 
+    margin: var(--size-75) 0;
+    grid-gap: var(--size-25);
+  }
+  
   .key-benefits-header { margin: var(--size-20); }
   .key-benefit-grid { grid-template-columns: 1fr 1fr; }
 
@@ -73,6 +70,7 @@
     flex-direction: column; 
   }
   
+  .img-dots-wrapper { justify-content: center; }
   .hubspot.container { padding: 0; }
   
   .hubspot-info { 
@@ -80,7 +78,7 @@
     padding: var(--size-30);
   }
 
-  .company-logos { padding-top: var(--size-30); }
+  .company-logos { padding-top: var(--size-40); }
   .pricing-container { padding: var(--size-15); }
 
   .price-card { 
@@ -96,7 +94,6 @@
   }
 
   .btn-box p { font-size: .75rem; }
-
   .container.contact-wrapper { flex-direction: column; }
 
   .hire-us-wrapper {
@@ -189,10 +186,10 @@
   flex-direction: column;
   text-align: center; 
  }
-  
+
+  .hire-us-name { text-align: center; } 
   .name-img-wrapper { align-items: center; }
   .input-container { flex-direction: column; }
-
   .front-contact-info img { margin: 0 auto; }
   .front-links-container { text-align: center; }
   .front-links, .career-links { justify-content: center; }

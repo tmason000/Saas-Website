@@ -20,6 +20,7 @@ nav.container {
   outline: none;
   background-color: transparent;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .navbar-toggler span {
@@ -362,33 +363,31 @@ ul.nav-list {
 
 .hubspot.container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
 
 .img-dots-wrapper {
   display: flex;
-  justify-content: center;
   position: relative;
   max-width: 100%;
-  width: 28.125rem;
-  height: 31.25rem;
+  width: 100%;
+  margin-bottom: var(--size-75);
+  justify-content: space-around;
 }
 
 .hubspot-woman-img {
-  position: absolute;
-  max-width: 75%;
+  max-width: 50%;
   object-fit: cover;
-  top: 15%;
 }
 
 .abstract-dots {
-  max-width: 75%;
-  max-height: 75%;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: 8.2rem;
-  right: 11.3rem;
+  top: 15%;
+  right: 18%;
+  z-index: -1;
 }
 
 .hubspot-logo {
@@ -558,13 +557,14 @@ ul.nav-list {
 .hire-us-img {
   display: flex;
   align-items: center;
+  gap: var(--size-25);
 }
 
 .hire-us-img img {
   width: var(--size-30);
   border-radius: 50%;
-  margin: 0 var(--size-25) 0 0;
   object-fit: cover;
+  justify-content: space-between;
 }
 
 .hire-us-img > .larger-photo {
