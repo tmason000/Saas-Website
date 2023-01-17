@@ -8,7 +8,19 @@ nav.container {
   display: flex;
   align-items: center;
   padding-top: var(--size-25);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  transition: ease-in-out 0.3s;
+  padding: var(--size-15);
+  border-radius: var(--size-10);
+}
+
+nav.container.sticky {
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.3);
 }
 
 .nav-bar { display: flex; }
